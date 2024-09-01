@@ -59,6 +59,7 @@ section {
 
 li {
     padding: 0.6rem 0;
+    word-break: break-all;
 }
 
 footer {
