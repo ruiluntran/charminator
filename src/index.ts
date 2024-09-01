@@ -1,0 +1,1 @@
+export {Charminator} from './charminator';
