@@ -1,6 +1,6 @@
 {
   "name": "charminator",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "private": false,
   "dependencies": {
     "react": "^18.3.1",

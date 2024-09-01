@@ -34,7 +34,9 @@ Introducing &lt;Charminator /&gt;: a component so powerful, you’ll forget it o
 npm i charminator
 ```
 
-### Example
+### Examples
+
+#### 1. Displaying a single char
 
 ``` tsx
 <Charminator
@@ -46,6 +48,69 @@ npm i charminator
 ```
 
 This will render the letter “A” in a size and shade of red that will make all other letters on the page feel inferior.
+
+#### 2. Displaying a word
+
+If you want to write the word "Charminator", you can do it in the following way:
+
+``` tsx
+<Charminator
+  value="c"
+  color="#FF0000"
+  size="28px"
+  uppercase: {true};
+/>
+<Charminator
+  value="h"
+  color="#FF0000"
+  size="28px"
+/>
+<Charminator
+  value="a"
+  color="#FF0000"
+  size="28px"
+/>
+<Charminator
+  value="r"
+  color="#FF0000"
+  size="28px"
+/>
+<Charminator
+  value="m"
+  color="#FF0000"
+  size="28px"
+/>
+<Charminator
+  value="i"
+  color="#FF0000"
+  size="28px"
+/>
+<Charminator
+  value="n"
+  color="#FF0000"
+  size="28px"
+/>
+<Charminator
+  value="a"
+  color="#FF0000"
+  size="28px"
+/>
+<Charminator
+  value="t"
+  color="#FF0000"
+  size="28px"
+/>
+<Charminator
+  value="o"
+  color="#FF0000"
+  size="28px"
+/>
+<Charminator
+  value="r"
+  color="#FF0000"
+  size="28px"
+/>
+```
 
 ### Why Use Charminator?
 
