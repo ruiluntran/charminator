@@ -25,6 +25,11 @@ Introducing &lt;Charminator /&gt;: a component so powerful, you’ll forget it o
 | `color`      | `string`  | No       | Sets the text color. Should be a valid hex color code (e.g., `#FF5733`).    |
 | `size`       | `string`  | No       | Specifies the font size (e.g., `12px`, `2em`).                              |
 
+### Install
+
+``` shell
+npm i charminator
+```
 
 ### Example
 
