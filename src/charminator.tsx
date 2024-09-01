@@ -1,6 +1,5 @@
 import {ReactElement} from 'react';
 import {charminatorProps} from './types/charminator.props';
-import './charminator.scss'
 
 export function Charminator(props: charminatorProps): ReactElement {
 
@@ -12,16 +11,20 @@ export function Charminator(props: charminatorProps): ReactElement {
 
 
   if (props.value.length > 1) {
+    const pStyle = {fontSize: '14px'};
     return (
-      <div className="charminator-error">
-        <div className="title">
+      <div style={{padding: '30px 0'}}>
+        <div style={{
+          fontSize: '28px',
+          color: '#ff0000'
+        }}>
           This isn’t a word party! It’s a solo gig!
         </div>
-        <p>
+        <p style={pStyle}>
           Please reduce your character count to exactly 1. If you're trying to render a whole word, might I suggest
           using &lt;Wordinator /&gt;`?
         </p>
-        <p>
+        <p style={pStyle}>
           Oh wait, we don’t have that—because this library is proudly and absurdly dedicated to ONE
           lonely character at a time!
         </p>
