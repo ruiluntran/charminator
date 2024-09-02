@@ -34,6 +34,7 @@ html, body {
 h2 {
     font-size: 1.3rem;
     margin: 1rem 0;
+    font-weight: bold;
 }
 
 img {
@@ -61,6 +62,14 @@ li {
     word-break: break-word;
 }
 
+table {
+    font-size: 0.9rem;
+}
+
+table .description {
+    min-width: 300px;
+}
+
 footer {
     font-size: 0.8rem;
 }
@@ -71,18 +80,37 @@ footer a {
     color: #FF5C00;
 }
 
-.github {
+.social-link {
     display: inline-flex;
     text-decoration: none;
     color: inherit;
+    align-items: center;
 }
 
-.github:hover {
+.social-link:hover {
     color: #FF5C00;
 }
 
-.github img {
-    width: 1.3rem;
-    height: 1.3rem;
+.social-link img {
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-right: 0.5rem;
+    filter: grayscale(1);
+}
+
+.social-link:hover img {
+    filter: grayscale(0);
+}
+
+.code-field {
+    display: inline-flex;
+    background: #EDEDED;
+    padding: 12px 30px;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+.code-field::before {
+    content: '$';
     margin-right: 0.5rem;
 }

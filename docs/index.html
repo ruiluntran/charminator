@@ -4,6 +4,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Charminator</title>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/favicons/site.webmanifest">
+  <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#ffffff">
+  <link rel="shortcut icon" href="/favicons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
+  <meta property="og:site_name" content="Charminator"/>
+  <meta property="og:locale" content="en"/>
+  <meta property="og:url"
+        content="https://ruiluntran.github.io/charminator/"/>
+  <meta property="og:title"
+        content="Charminator | So powerful, you'll forget it only displays one character."/>
+  <meta property="og:description"
+        content="A React component so powerful, you'll forget it only displays one character.">
+  <meta property="og:type" content="website"/>
+  <meta property="og:image" content="/img/social-share.jpg"/>
+  <meta property="og:image:width" content="1280"/>
+  <meta property="og:image:height" content="640"/>
+
+
   <link rel="stylesheet" href="./css/bootstrap.min.css">
   <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -11,8 +36,12 @@
 <section class="pt-0">
   <div class="container h-100">
     <div class="row">
-      <div class="col-12 text-end mt-3">
-        <a class="github" href="https://github.com/ruiluntran/charminator">
+      <div class="col-12 text-center text-md-end mt-3">
+        <a class="social-link me-3" href="https://www.npmjs.com/package/charminator">
+          <img class="github-mark" src="./img/npm-logo.svg" alt="NPM Logo">
+          <span>Open on NPM</span>
+        </a>
+        <a class="social-link" href="https://github.com/ruiluntran/charminator">
           <img class="github-mark" src="./img/github-mark.png" alt="Github Logo">
           <span>Open on Github</span>
         </a>
@@ -26,44 +55,129 @@
         <img class="logo" src="./img/charminator-logo.svg" alt="Charminator Logo">
         <h2>The Wacky Way to Render Characters in React</h2>
         <p>
-          Welcome to Charminator, the one and only React component library that makes displaying a single character as complicated and absurdly fun as possible!
+          Welcome to Charminator, the one and only React component library that makes displaying a single character as
+          complicated and absurdly fun as possible!
         </p>
         <p>
-          Ever dreamed of turning your UI into a battleground of functional programming debates? Ever wanted to spend an entire day manipulating a single character? Well, your dreams just came true!
+          Ever dreamed of turning your UI into a battleground of functional programming debates? Ever wanted to spend an
+          entire day manipulating a single character? Well, your dreams just came true!
         </p>
         <p>
-          Introducing <strong>&lt;Charminator /&gt;</strong>: a component so powerful, you’ll forget it only displays one character.
+          Introducing <strong>&lt;Charminator /&gt;</strong>: a component so powerful, you’ll forget it only displays
+          one character.
         </p>
+        <small class="d-block pt-3">Install now</small>
+        <div class="code-field">
+          npm i charminator
+        </div>
       </div>
     </div>
   </div>
 </section>
 <section class="bg-light">
-<div class="container h-100">
-  <div class="row h-100">
-    <div class="col-12 align-content-center">
-      <h2>Key Features:</h2>
-      <ul>
-        <li>
-          <strong>Character Rendering:</strong>
-          Because why render an entire word when you can focus on a single char?
-        </li>
-        <li>
-          <strong>Custom Styling:</strong>
-          Change colors and sizes! Make your letter red, green, or neon purple! Why? Because you can!
-        </li>
-        <li>
-          <strong>Case Manipulation:</strong>
-           Feeling loud? Make it uppercase! Whispering? Go lowercase! Or just mix it up because life is too short for consistent casing.
-        </li>
-        <li>
-          <strong>Over-Engineering at Its Finest:</strong>
-          Want to display an ‘A’ in a way that would make your fellow developers weep? Here’s your chance!
-        </li>
-      </ul>
+  <div class="container h-100">
+    <div class="row h-100">
+      <div class="col-12 align-content-center">
+        <h2>Key Features</h2>
+        <ul>
+          <li>
+            <strong>Character Rendering:</strong>
+            Because why render an entire word when you can focus on a single char?
+          </li>
+          <li>
+            <strong>Custom Styling:</strong>
+            Change colors and sizes! Make your letter red, green, or neon purple! Why? Because you can!
+          </li>
+          <li>
+            <strong>Case Manipulation:</strong>
+            Feeling loud? Make it uppercase! Whispering? Go lowercase! Or just mix it up because life is too short for
+            consistent casing.
+          </li>
+          <li>
+            <strong>Over-Engineering at Its Finest:</strong>
+            Want to display an ‘A’ in a way that would make your fellow developers weep? Here’s your chance!
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
-</div>
+</section>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2>Charminator Properties</h2>
+        <div class="table-responsive">
+          <table class="table mt-5">
+            <thead>
+            <tr>
+              <th>Property</th>
+              <th>Type</th>
+              <th>Required</th>
+              <th class="description">Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>value</td>
+              <td>string</td>
+              <td>Yes</td>
+              <td>The character to be displayed. Must be a single character.</td>
+            </tr>
+            <tr>
+              <td>toLowerCase</td>
+              <td>boolean</td>
+              <td>No</td>
+              <td>If true, transforms the character to lowercase.</td>
+            </tr>
+            <tr>
+              <td>toUpperCase</td>
+              <td>boolean</td>
+              <td>No</td>
+              <td>If true, transforms the character to uppercase.</td>
+            </tr>
+            <tr>
+              <td>className</td>
+              <td>string</td>
+              <td>No</td>
+              <td>Optional CSS class to apply custom styles.</td>
+            </tr>
+            <tr>
+              <td>color</td>
+              <td>string</td>
+              <td>No</td>
+              <td>Sets the text color. Should be a valid hex color code (e.g., #FF5733).</td>
+            </tr>
+            <tr>
+              <td>size</td>
+              <td>string</td>
+              <td>No</td>
+              <td>Specifies the font size (e.g., 12px, 2em).</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2>Why Use Charminator?</h2>
+        <ul>
+          <li>Because every other problem in React has already been solved.</li>
+          <li>Because sometimes you just want to question your career choices.</li>
+          <li>Because life’s too short not to laugh at how much we over-complicate things.</li>
+        </ul>
+        <p class="mt-5">
+          Install now, and join the fun of turning a single character into the most important element on your page.
+          Let’s make React development even more ridiculous!
+        </p>
+      </div>
+    </div>
+  </div>
 </section>
 <footer class="py-2">
   <div class="container">
